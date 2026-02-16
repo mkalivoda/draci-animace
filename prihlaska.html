@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přihláška</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="dracek.jpg">
+
+<!-- Autíčko nahoře -->
+<div class="auto-container">
+    <div class="auto">🚗</div>
+</div>
+
+<a href="index.html">Zpět na hlavní stránku</a>
+
+<form action="https://formsubmit.co/mkalivoda@spskt.cz"
+      method="POST"
+      enctype="multipart/form-data">
+
+    <label for="name">Jméno draka:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label>Pohlaví draka:</label>
+    <input type="radio" name="pohlavi" value="samec"> Samec
+    <input type="radio" name="pohlavi" value="samice"> Samice
+
+    <label for="date">Datum narození draka:</label>
+    <input type="date" id="date" name="date">
+
+    <label for="color">Barva šupin:</label>
+    <input type="color" id="color" name="color" value="#ff0000">
+
+    <label for="pocet">Počet sežraných osob:</label>
+    <input type="number" id="pocet" name="pocet" min="0" max="1000">
+
+    <label for="dech">Délka ohnivého dechu (0–10):</label>
+    <input type="range" id="dech" name="dech" min="0" max="10">
+
+    <label>
+        <input type="checkbox" name="certifikat">
+        Certifikát nehořlavosti
+    </label>
+
+    <label for="foto">Fotografie draka:</label>
+    <input type="file" id="foto" name="foto">
+
+    <label for="dovednosti">Dovednosti draka:</label>
+    <select id="dovednosti" name="dovednosti[]" multiple size="4">
+        <option>Plivání ohně na cíl</option>
+        <option>Nejhlasitější řev</option>
+        <option>Lez mezi sopkami</option>
+    </select>
+
+    <label>Email:</label>
+    <input type="email" placeholder="např. drak@hrad.cz" required>
+
+    <label>Heslo:</label>
+    <input type="password" required>
+
+    <!-- TLAČÍTKA -->
+    <div class="button-row">
+        <input type="submit" value="Odeslat přihlášku" class="btn-submit">
+        <input type="reset" value="Resetovat formulář" class="btn-reset">
+    </div>
+
+    <br>
+    <a href="english.html">click here for english version</a>
+</form>
+<div class="gear-container">
+    <div class="gear">⚙️</div>
+</div>
+
+</body>
+</html>
